@@ -7,14 +7,14 @@ const Home = () => {
   return (
     <div 
       className="min-h-screen flex flex-col bg-cover bg-center relative"
-      style={{ backgroundImage: "url('https://media.istockphoto.com/id/1350348767/photo/businessman-holding-tablet-with-virtual-document-and-mark-correct-sign-for-online-approve.jpg?s=2048x2048&w=is&k=20&c=jX0dfERhoz9pZTyl6jiHxKXieDr9GaiIKgTv1srqnnQ=')" }}
+      
     >
       {/* Dark Overlay for Better Readability */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Navbar */}
       <nav className="relative w-full flex justify-between items-center py-4 px-8 bg-white/80 backdrop-blur-md shadow-md">
-        <h1 className="text-3xl font-bold text-gray-800">Todo App</h1>
+        <h1 className="text-3xl font-bold text-gray-800">Task Manager</h1>
         <div className="space-x-4">
           <button 
             onClick={() => navigate("/login")} 
@@ -40,7 +40,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="text-5xl font-extrabold text-white drop-shadow-lg"
         >
-          Welcome to Your <span className="text-yellow-300">Todo App</span> 🎯
+          Welcome to Your <span className="text-blue-300">Task Manager App</span> 
         </motion.h1>
 
         <motion.p 
@@ -49,7 +49,7 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg text-gray-200 mt-4 max-w-2xl"
         >
-          Organize your tasks, stay productive, and achieve your goals with ease.
+          Organize your tasks in a very Effective way , stay productive, and achieve your goals with ease.
         </motion.p>
 
         {/* Animated Call-to-Action Buttons */}
@@ -63,7 +63,7 @@ const Home = () => {
             onClick={() => navigate("/signup")} 
             className="bg-yellow-300 text-gray-800 px-6 py-3 text-lg font-bold rounded-lg shadow-md hover:bg-yellow-400 transition duration-300"
           >
-            Get Started 🚀
+            Get Started 
           </button>
           <button 
             onClick={() => navigate("/login")} 
