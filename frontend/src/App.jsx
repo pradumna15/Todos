@@ -16,7 +16,7 @@ const AnimatedRoutes = () => {
   useEffect(() => {
     if (navigationType !== "POP") {
       setLoading(true);
-      setTimeout(() => setLoading(false), 1000); // Simulated loading time
+      setTimeout(() => setLoading(false), 1000); 
     }
   }, [location]);
 
